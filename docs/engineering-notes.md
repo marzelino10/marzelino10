@@ -1,6 +1,6 @@
 # Behind the builds
 
-A closer look at how I approach data and business systems: the workflow, the failure modes, and the decisions that keep the numbers explainable.
+A closer look at my data engineering, BI, workflow automation, and Cloudflare work: the business process, the data model, and the decisions that keep the numbers explainable.
 
 [← Back to my profile](../README.md)
 
@@ -37,7 +37,7 @@ Live updates use **SQLite Durable Objects with hibernating WebSockets**. Socket 
 - **Private media:** Worker-issued HMAC-signed URLs authorize R2 transfers. Authorization runs before cache lookup; immutable media use a stable internal cache identity, keeping URL signatures out of the cache key.
 - **Frontend contracts:** shared Zod schemas/types and TanStack Query connect the React interface to the API. IndexedDB preserves offline capture, while review and payment decisions remain online.
 
-These are implemented mechanisms, rather than a claim of exactly-once delivery or unlimited scale. The design makes interrupted work observable and recoverable.
+Delivery state and recovery paths make interrupted work observable and recoverable.
 
 ## Construction operations: connecting field evidence to payments
 
@@ -84,19 +84,6 @@ Several applications use command journals, resumable work, queued integrations, 
 
 [Read the source](https://github.com/marzelino10/label-generator/blob/main/Code.gs) · [Inspect the print layout](https://github.com/marzelino10/label-generator/blob/main/labels.html)
 
-## Offline retail: make every sale and stock movement explainable
-
-**Rust · Tauri · SQLite · JavaScript**
-
-This desktop POS is designed for a retailer that must keep selling without internet access. The backend owns money, stock, and authorization; the frontend handles the cashier interaction.
-
-- A cart UUID identifies a sale attempt. Replaying the request returns the original receipt, and a unique database constraint also guards the insert path.
-- Prices and costs are read from the database inside the sale transaction. Costs are captured on sale lines so later supplier-price changes do not rewrite historical margins.
-- An append-only stock movement ledger explains receipts, transfers, sales, voids, and corrections. Cached stock balances can be rebuilt from that ledger.
-- Automatic backups, numbered migrations, and scrubbed support bundles are part of the application’s support workflow.
-
-This is separate from my earlier React POS prototype, which explored keyboard-first checkout, barcode search, and multiple sellable units per product.
-
 ## Data engineering: preserve raw inputs and make transformations inspectable
 
 ### Global Ski Resorts Pipeline
@@ -123,41 +110,18 @@ The earlier repository implementation used Snowflake; the current local work mov
 
 Four pages connect executive performance, sales, operations, and satisfaction. The semantic model contains distinct-order counts, revenue and cancellation measures, delivery buckets, and filter-aware calculations. Dynamic callouts respond to the selected period, state, category, and order status.
 
-This is a self-directed analysis of the public Olist dataset. Its business metrics describe that dataset rather than results delivered to a client.
+This self-directed project analyzes the public Olist dataset.
 
 [Dashboard preview](https://marzelino10.github.io/olist-executive-dashboard/) · [Versioned semantic model](https://github.com/marzelino10/olist-executive-dashboard/tree/main/Olist%20Executive%20Dashboard.SemanticModel/definition)
 
-## Browser Python: execution without a Python server
-
-**React · TypeScript · CodeMirror · Comlink · Pyodide/WebAssembly · pandas · matplotlib**
-
-The learning platform runs Python in a dedicated browser worker, with static files deployed through Cloudflare Workers Static Assets. It avoids a server-side learner-code execution service.
-
-The runtime distinguishes a cold interpreter download/boot from a learner program. Boot has its own budget; learner execution has a five-second deadline. A runaway program terminates the worker, and the next attempt creates a fresh interpreter. Each ordinary run also starts from a fresh Python namespace so prior variables do not silently influence the result.
-
-Outcome-based grading checks the resulting values/DataFrames rather than enforcing one sequence of commands. The lesson checks exercise alternative correct solutions and plausible incorrect answers. Package profiles load analysis dependencies when needed.
-
-The product has an explicit hosting-cost ceiling. Moving computation into the learner’s browser and serving static assets is an architectural response to that constraint; cost models are planning estimates, rather than a claim about measured production bills.
-
-## Interactive products and delivery
-
-| Build | Engineering beyond the interface |
-| :--- | :--- |
-| **Isometric portfolio** | Native Canvas 2D projection, depth sorting, street routing, playable interiors, and furniture-aware movement. Regression checks exercise waypoint movement, reachability, coordinate round trips, and indoor collisions. |
-| **Fishday** | A Kotlin/Compose game with an immutable simulation engine, explicit time inputs, saved RNG state, and offline timers. Its custom renderer implements orthographic projection, flat lighting, back-face/off-screen culling, depth ordering, and reused triangle buffers. |
-| **Hanzi Match** | Solvable tile-board generation combines with Leitner vocabulary records, weakest-word selection, daily review selection, Simplified/Traditional content, device pronunciation, and stroke-order data. Current development targets are Android and desktop. |
-| **Photography portfolio** | Astro/React and local Keystatic editing, plus Sharp-generated AVIF/WebP images in four sizes. Build validation covers generated links, metadata, JSON-LD, image alt text, and deployment bounds. |
-| **Windows POS packaging** | Linux-based Rust cross-compilation with cargo-xwin, NSIS installer and portable executable generation, checksums, numbered migrations, installation instructions, and a support runbook. |
-| **Invitation studio** | A local-first vinext/React application with D1 and Drizzle, guest passcode gates, RSVP upserts, bounded result sets, and redacted payloads before unlock. |
-
-### Applied semantic search
+## Data collection and semantic search
 
 [Moody Quotes](https://github.com/marzelino10/moody-quotes) collects quotes, stores them through PostgreSQL/Supabase, and uses Sentence Transformers embeddings with cosine similarity in Streamlit. Model and embedding caches avoid recomputing the corpus on every search.
 
 [Inspect the matching implementation](https://github.com/marzelino10/moody-quotes/blob/main/app.py) · [Inspect collection and storage](https://github.com/marzelino10/moody-quotes/blob/main/scraper.py)
 
-A separate local document-Q&A experiment uses PDF chunking, Ollama embeddings, LangChain, and Chroma retrieval to supply context to a local model.
+
 
 ---
 
-**The common thread:** model the process, keep the business rules explicit, and make failures and corrections understandable.
+**The common thread:** connect reliable data, useful reporting, and practical business automation.
