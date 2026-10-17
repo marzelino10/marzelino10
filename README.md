@@ -1,154 +1,95 @@
-<p align="center">
-  <img src="assets/profile-header.svg" width="100%" alt="Marzelino Malintoi — Analytics engineering, BI and workflow automation. The data was messy. I took it personally." />
-</p>
+# Marzelino Malintoi
 
-<div align="center">
+### Data & Automation Engineer
 
-### Analytics Engineer · BI & Business Automation
+*The data was messy. I took it personally.*
 
-**Reliable data. Clear decisions. Less manual work.**
+I build data pipelines, reporting, and automation that help teams make decisions and keep work moving. Previously, I led BI work at **VACO, supporting Google Surveys in Taipei**. My background combines an MBA with Chemical Engineering.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marzelino/)
-[![Portfolio](https://img.shields.io/badge/Explore_my_work-164E63?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.datascienceportfol.io/marzelinomalintoi)
-[![Email](https://img.shields.io/badge/Let's_talk-E8B86D?style=for-the-badge&logo=gmail&logoColor=15202B)](mailto:marzelino.malintoi@gmail.com)
-[![X](https://img.shields.io/badge/Follow_the_build-17212F?style=for-the-badge&logo=x&logoColor=white)](https://x.com/zelo_project)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-343B43?style=flat-square)](https://www.linkedin.com/in/marzelino/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Selected_work-343B43?style=flat-square)](https://www.datascienceportfol.io/marzelinomalintoi)
+[![Email](https://img.shields.io/badge/Email-Get_in_touch-343B43?style=flat-square)](mailto:marzelino.malintoi@gmail.com)
 
-<sub>📍 Manado, Indonesia · Open to opportunities & project collaborations</sub>
+## Selected work
 
-</div>
+### Understand what drives revenue and delivery performance
 
-## 🧭 From the numbers to the workflow
+**[Olist Executive Dashboard](https://github.com/marzelino10/olist-executive-dashboard)** connects sales, delivery delays, and customer reviews in four Power BI report pages. Built to move from executive KPIs to the categories and regions that need attention.
 
-I’m **Marzelino**, an analytics engineer and former **BI Team Lead at VACO, supporting Google Surveys in Taipei**. My work connects three things: **reliable data, useful reporting, and the business processes behind them**.
+<a href="https://marzelino10.github.io/olist-executive-dashboard/"><img src="https://raw.githubusercontent.com/marzelino10/olist-executive-dashboard/main/docs/executive_overview.png" width="100%" alt="Olist executive dashboard showing revenue trends, product categories, regional sales, and delivery performance" /></a>
 
-I build **SQL/dbt models, Python pipelines, decision-ready BI, and Google Workspace automation**. My work spans cloud data platforms and a **30-project Workspace portfolio** covering data preparation, reporting, and operational workflows.
+`Power BI` `Power Query` `DAX` `Dimensional modeling`
 
-I also build the systems around that data on **Cloudflare**. **Kairagi PWA** brings together field reporting, accounting integration, controlled access, and reliable notifications—my most substantial application project.
+[Dashboard preview](https://marzelino10.github.io/olist-executive-dashboard/) · [Repository](https://github.com/marzelino10/olist-executive-dashboard)
 
-An **MBA and a Chemical Engineering background** help me connect the business question, the data model, and the process that needs to improve.
+### Connect field progress to purchasing and payments
 
-<p align="center">
-  <img src="assets/impact.svg" width="100%" alt="VACO experience: 80% improvement in reporting efficiency; 90% less manual maintenance through automation; Data Analyst and BI Team Lead, 2022–2025." />
-</p>
+**Kairagi PWA** brings construction QC, material workflows, inventory, and contractor payments into one system. Field teams capture evidence; reviewers approve work; accounting data stays connected through recoverable syncs.
 
-## ☁️ Kairagi PWA · Data connected to operations
+Built on Cloudflare for offline field capture, controlled access, private photos, and notifications that keep reviews moving.
 
 <p>
-<img alt="Cloudflare Workers" src="https://img.shields.io/badge/Workers-F38020?style=for-the-badge&amp;logo=cloudflareworkers&amp;logoColor=white" />
-<img alt="Cloudflare Pages" src="https://img.shields.io/badge/Pages-F38020?style=for-the-badge&amp;logo=cloudflarepages&amp;logoColor=white" />
-<img alt="Cloudflare D1" src="https://img.shields.io/badge/D1-F38020?style=for-the-badge&amp;logo=cloudflare&amp;logoColor=white" />
-<img alt="Cloudflare R2" src="https://img.shields.io/badge/R2-F38020?style=for-the-badge&amp;logo=cloudflare&amp;logoColor=white" />
-<img alt="Cloudflare Durable Objects" src="https://img.shields.io/badge/Durable_Objects-D96617?style=for-the-badge" />
-<img alt="Cloudflare Queues" src="https://img.shields.io/badge/Queues-D96617?style=for-the-badge" />
-<img alt="Cloudflare Access" src="https://img.shields.io/badge/Access-D96617?style=for-the-badge" />
+<img alt="Cloudflare Workers" src="https://img.shields.io/badge/Workers-D26B27?style=flat-square&amp;logo=cloudflareworkers&amp;logoColor=white" />
+<img alt="Cloudflare Pages" src="https://img.shields.io/badge/Pages-D26B27?style=flat-square&amp;logo=cloudflarepages&amp;logoColor=white" />
+<img alt="Cloudflare D1" src="https://img.shields.io/badge/D1-D26B27?style=flat-square" />
+<img alt="Cloudflare R2" src="https://img.shields.io/badge/R2-D26B27?style=flat-square" />
+<img alt="Cloudflare Durable Objects" src="https://img.shields.io/badge/Durable_Objects-D26B27?style=flat-square" />
+<img alt="Cloudflare Queues" src="https://img.shields.io/badge/Queues-D26B27?style=flat-square" />
+<img alt="Cloudflare Access" src="https://img.shields.io/badge/Access-D26B27?style=flat-square" />
 </p>
 
-Field evidence, purchasing, inventory, and contractor payments share one operational workflow. I use Cloudflare to keep that information connected, access controlled, and accounting syncs recoverable.
+`TypeScript` `Next.js` `Hono` `OAuth2`
 
-**Under the hood:** hibernating WebSockets, queue retries and dead-letter handling, private media, and encrypted OAuth tokens.
+### Turn raw sources into dependable analytical models
 
-<a href="docs/engineering-notes.md#cloudflare-real-time-delivery-with-a-durable-backbone"><img src="assets/cloudflare-architecture.svg" width="100%" alt="Cloudflare system architecture: Next.js on Pages, Hono on Workers, D1 data and outbox, private R2 media, Queues with a dead-letter queue, Durable Objects and Web Push" /></a>
+| Project | Purpose | Stack |
+| :--- | :--- | :--- |
+| **[Global Ski Resorts](https://github.com/marzelino10/ski-resorts)** | Combine resort and snow data to compare locations and skier suitability. Layered models, spatial joins, and quality checks make the transformations inspectable. | AWS S3, Snowflake, dbt |
+| **Disaster Monitor** | Turn USGS earthquake records into country-enriched analytics, with daily ingestion, historical backfills, incremental merges, and visibility into failed runs. | Python, Airflow, Docker, GCS, BigQuery, dbt |
 
-**[Inside the notification architecture →](docs/engineering-notes.md#cloudflare-real-time-delivery-with-a-durable-backbone)** · **[Accounting sync & encrypted OAuth →](docs/engineering-notes.md#construction-operations-connecting-field-evidence-to-payments)**
+<a href="https://marzelino10.github.io/ski-resorts/"><img src="https://raw.githubusercontent.com/marzelino10/ski-resorts/main/docs/architecture/dbt_dag.png" width="100%" alt="Actual dbt lineage graph from the Ski Resorts project, connecting source, cleaned, and analytical models" /></a>
 
-## 🚀 Selected data & automation work
+[Explore the Ski Resorts models and documentation](https://marzelino10.github.io/ski-resorts/)
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="https://github.com/marzelino10/olist-executive-dashboard"><img src="https://raw.githubusercontent.com/marzelino10/olist-executive-dashboard/main/docs/executive_overview.png" width="100%" alt="Actual Olist Power BI executive dashboard: revenue, orders, categories and regional performance" /></a>
-<h3>📊 Olist Executive Dashboard</h3>
-<p><strong>A business story across sales, delivery, and satisfaction.</strong> Four report pages connect executive KPIs with revenue risk, delivery performance, and reviews. A versioned semantic model combines star-schema relationships, time intelligence, and dynamic DAX callouts.</p>
-<p><img alt="Power BI" src="https://img.shields.io/badge/Power_BI-E8B86D?style=flat-square" /> <img alt="DAX" src="https://img.shields.io/badge/DAX-164E63?style=flat-square" /> <img alt="Power Query" src="https://img.shields.io/badge/Power_Query-334155?style=flat-square" /></p>
-<p><a href="https://github.com/marzelino10/olist-executive-dashboard"><strong>Code ↗</strong></a> · <a href="https://github.com/marzelino10/olist-executive-dashboard/blob/main/Olist%20Executive%20Dashboard.SemanticModel/definition/tables/_Measures.tmdl">DAX source ↗</a> · <a href="https://marzelino10.github.io/olist-executive-dashboard/">Preview ↗</a></p>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/marzelino10/ski-resorts"><img src="https://raw.githubusercontent.com/marzelino10/ski-resorts/main/docs/architecture/data_architecture.png" width="100%" alt="Actual ski resorts pipeline architecture: AWS S3, Snowflake and dbt Bronze, Silver and Gold layers" /></a>
-<h3>🏔️ Global Ski Resorts Pipeline</h3>
-<p><strong>From raw files to analysis-ready models.</strong> Bronze → Silver → Gold models turn source files into resort suitability scores and snow-coverage analysis. Includes a 30 km spatial join, weighted scoring logic, and dbt quality checks.</p>
-<p><img alt="AWS S3" src="https://img.shields.io/badge/AWS_S3-E8963E?style=flat-square&amp;logo=amazons3&amp;logoColor=white" /> <img alt="Snowflake" src="https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&amp;logo=snowflake&amp;logoColor=white" /> <img alt="dbt" src="https://img.shields.io/badge/dbt-FF694B?style=flat-square&amp;logo=dbt&amp;logoColor=white" /></p>
-<p><a href="https://github.com/marzelino10/ski-resorts"><strong>Code ↗</strong></a> · <a href="https://github.com/marzelino10/ski-resorts/blob/main/ski_resorts_pipeline/models/gold/gold_beginner_expert_resort.sql">Scoring SQL ↗</a> · <a href="https://marzelino10.github.io/ski-resorts/">Docs ↗</a></p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<img src="assets/earthquake-pipeline.svg" width="100%" alt="Disaster Monitor architecture diagram: USGS API to GCS and BigQuery to dbt models, orchestrated by Airflow" />
-<h3>🌋 Disaster Monitor</h3>
-<p><strong>Earthquake data with a traceable path to analytics.</strong> Daily USGS ingestion and mapped historical backfills feed update-aware incremental merges and geospatial country enrichment. Run statistics, retry policies, and Slack alerts expose pipeline health.</p>
-<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" /> <img alt="Airflow" src="https://img.shields.io/badge/Airflow-017CEE?style=flat-square&amp;logo=apacheairflow&amp;logoColor=white" /> <img alt="BigQuery" src="https://img.shields.io/badge/BigQuery-4285F4?style=flat-square&amp;logo=googlebigquery&amp;logoColor=white" /> <img alt="dbt" src="https://img.shields.io/badge/dbt-FF694B?style=flat-square&amp;logo=dbt&amp;logoColor=white" /></p>
-<p><a href="docs/engineering-notes.md#disaster-monitor"><strong>Pipeline decisions ↗</strong></a></p>
-</td>
-<td width="50%" valign="top">
-<img src="assets/workspace-systems.svg" width="100%" alt="30 Google Workspace portfolio projects: collect, validate, act; CRM, billing, inventory and data workflows" />
-<h3>⚙️ Google Workspace Systems</h3>
-<p><strong>30 standalone portfolio projects around real business workflows.</strong> Across the portfolio: resumable ETL, field-level transformation history, lot genealogy, budget controls, revision-aware approvals, and queued Workspace integrations. Interrupted multi-sheet commands recover from persisted plans.</p>
-<p><img alt="Apps Script" src="https://img.shields.io/badge/Apps_Script-4285F4?style=flat-square&amp;logo=googleappsscript&amp;logoColor=white" /> <img alt="Google Sheets" src="https://img.shields.io/badge/Sheets-34A853?style=flat-square&amp;logo=googlesheets&amp;logoColor=white" /> <img alt="Local regression suites" src="https://img.shields.io/badge/29_local_suites-passing-2A8468?style=flat-square" /></p>
-<p><a href="docs/engineering-notes.md#google-workspace-small-systems-with-explicit-business-rules"><strong>Systems & validation ↗</strong></a> · <a href="https://github.com/marzelino10/label-generator">Public example ↗</a></p>
-</td>
-</tr>
-</table>
+## Workflow automation
 
-### More data projects
+### Repair contact data before it reaches reporting or outreach
 
-- **[Moody Quotes](https://github.com/marzelino10/moody-quotes)** — Data collection and PostgreSQL/Supabase storage feed an embedding-based quote search in Streamlit. [View the implementation ↗](https://github.com/marzelino10/moody-quotes/blob/main/app.py)
-- **[FIFA World Cup Analysis](https://github.com/marzelino10/projectFIFA)** — SQL exploration of tournament results, home advantage, and award winners across 1930–2022.
-- **[WhoScored Scraper](https://github.com/marzelino10/WhoScored_Selenium)** — Python/Selenium collection of structured football statistics from JavaScript-rendered pages.
+A cleaning workflow that preserves original values, records corrections, and puts damaged phone numbers and uncertain duplicate matches into a review queue. The goal is usable contact data with an explanation for every unresolved record.
 
-## 🛠️ Core toolkit
+<img src="assets/contact-repair-demo.png" width="100%" alt="Contact-cleaning application comparing original and proposed field values, with unresolved phone numbers and duplicate candidates kept for review; synthetic demo records" />
 
-**Data languages & analysis**
+<sub>Contact repair application, shown with synthetic demo records.</sub>
 
-<img alt="SQL" src="https://img.shields.io/badge/SQL-4479A1?style=flat-square" /> <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" /> <img alt="pandas" src="https://img.shields.io/badge/pandas-150458?style=flat-square&amp;logo=pandas&amp;logoColor=white" />
+### Keep customer follow-ups moving
 
-**Data engineering & cloud platforms**
+A wellness retail CRM connects customer records with consent-aware emails and staff reminders. Recurring due dates advance after a reminder is sent successfully, keeping the next action visible across staff handovers.
 
-<img alt="dbt" src="https://img.shields.io/badge/dbt-FF694B?style=flat-square&amp;logo=dbt&amp;logoColor=white" /> <img alt="Airflow" src="https://img.shields.io/badge/Airflow-017CEE?style=flat-square&amp;logo=apacheairflow&amp;logoColor=white" /> <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" /> <img alt="BigQuery" src="https://img.shields.io/badge/BigQuery-4285F4?style=flat-square&amp;logo=googlebigquery&amp;logoColor=white" /> <img alt="Snowflake" src="https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&amp;logo=snowflake&amp;logoColor=white" /> <img alt="Google Cloud Storage" src="https://img.shields.io/badge/Google_Cloud_Storage-4285F4?style=flat-square&amp;logo=googlecloudstorage&amp;logoColor=white" /> <img alt="AWS S3" src="https://img.shields.io/badge/AWS_S3-E8963E?style=flat-square&amp;logo=amazons3&amp;logoColor=white" /> <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" />
+### Trace a stock issue through production
 
-**Business intelligence**
+A food-lot workflow follows ingredients into finished batches and customer shipments. Downstream holds and investigation reports help operators identify the affected stock and make evidence-backed release decisions.
 
-<img alt="Power BI" src="https://img.shields.io/badge/Power_BI-D4AF37?style=flat-square" /> <img alt="DAX" src="https://img.shields.io/badge/DAX-164E63?style=flat-square" /> <img alt="Power Query" src="https://img.shields.io/badge/Power_Query-334155?style=flat-square" /> <img alt="Looker Studio" src="https://img.shields.io/badge/Looker_Studio-4285F4?style=flat-square&amp;logo=looker&amp;logoColor=white" /> <img alt="Tableau" src="https://img.shields.io/badge/Tableau-E97627?style=flat-square" /> <img alt="Excel" src="https://img.shields.io/badge/Excel-217346?style=flat-square" /> <img alt="Google Sheets" src="https://img.shields.io/badge/Google_Sheets-34A853?style=flat-square&amp;logo=googlesheets&amp;logoColor=white" />
+`Google Apps Script` `Google Sheets` `Forms` `Drive` `Gmail` `Slack`
 
-**Workflow automation**
+**More public work:** [Attendee Badge Generator](https://github.com/marzelino10/label-generator), [WhoScored data collection](https://github.com/marzelino10/WhoScored_Selenium), [World Cup SQL analysis](https://github.com/marzelino10/projectFIFA), and [Moody Quotes](https://github.com/marzelino10/moody-quotes).
 
-<img alt="Apps Script" src="https://img.shields.io/badge/Apps_Script-4285F4?style=flat-square&amp;logo=googleappsscript&amp;logoColor=white" /> <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-B89822?style=flat-square&amp;logo=javascript&amp;logoColor=white" /> <img alt="clasp" src="https://img.shields.io/badge/clasp-4285F4?style=flat-square" /> <img alt="Selenium" src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&amp;logo=selenium&amp;logoColor=white" />
+## Toolkit
 
-**Cloudflare platform**
+| Area | Tools |
+| :--- | :--- |
+| Data engineering | SQL, Python, pandas, dbt, Airflow, Docker |
+| Warehousing & storage | BigQuery, Snowflake, Google Cloud Storage, AWS S3, PostgreSQL |
+| Reporting & analysis | Power BI, DAX, Power Query, Looker Studio, Tableau, Excel |
+| Workflow automation | Apps Script, Google Sheets, JavaScript, REST APIs, Selenium |
+| Cloudflare | Workers, Pages, D1, R2, Durable Objects, Queues, Access, Wrangler |
 
-<img alt="Workers" src="https://img.shields.io/badge/Workers-F38020?style=flat-square&amp;logo=cloudflareworkers&amp;logoColor=white" /> <img alt="Pages" src="https://img.shields.io/badge/Pages-F38020?style=flat-square&amp;logo=cloudflarepages&amp;logoColor=white" /> <img alt="D1" src="https://img.shields.io/badge/D1-F38020?style=flat-square" /> <img alt="R2" src="https://img.shields.io/badge/R2-F38020?style=flat-square" /> <img alt="Durable Objects" src="https://img.shields.io/badge/Durable_Objects-D96617?style=flat-square" /> <img alt="Queues" src="https://img.shields.io/badge/Queues-D96617?style=flat-square" /> <img alt="Access" src="https://img.shields.io/badge/Access-D96617?style=flat-square" /> <img alt="Wrangler" src="https://img.shields.io/badge/Wrangler-D96617?style=flat-square" />
+## Experience
 
-**Application tools supporting my systems**
+**VACO, supporting Google Surveys** / Taipei, Taiwan  
+BI Team Lead, 2024-2025 / Data Analyst, 2022-2024
 
-<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" /> <img alt="React" src="https://img.shields.io/badge/React-167E9E?style=flat-square&amp;logo=react&amp;logoColor=white" /> <img alt="Next.js" src="https://img.shields.io/badge/Next.js-17212F?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white" /> <img alt="Hono" src="https://img.shields.io/badge/Hono-E36002?style=flat-square&amp;logo=hono&amp;logoColor=white" /> <img alt="TanStack Query" src="https://img.shields.io/badge/TanStack_Query-B4414B?style=flat-square&amp;logo=reactquery&amp;logoColor=white" /> <img alt="Zod" src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&amp;logo=zod&amp;logoColor=white" />
-
-**What I apply them to:** analytical modeling · geospatial SQL · API ingestion · data quality & lineage · reporting automation · approval workflows · accounting integration.
-
-## 💼 The experience behind the builds
-
-**VACO · Supporting Google Surveys · Taipei, Taiwan**
-
-🟢 **BI Team Lead** · *2024–2025*
-
-- Led BI work across data engineering, analytics, knowledge architecture, and innovation.
 - Centralized historical utilization reporting in SQL, improving reporting efficiency by **80%**.
 - Automated brand-safety workflows with Apps Script, reducing manual maintenance by **90%**.
-- Mentored analysts in SQL, Looker Studio, and Apps Script.
+- Led BI work across data engineering and analytics, and mentored analysts in SQL, Looker Studio, and Apps Script.
 
-🔵 **Data Analyst** · *2022–2024*
-
-- Standardized data integration and reporting workflows across international teams.
-- Automated recurring business reports with SQL, Google Sheets, and Apps Script.
-
----
-
-<div align="center">
-
-### 🤝 Got a messy data problem? Let’s talk.
-
-For **analytics engineering, BI, and business automation** opportunities,<br>
-I bring the reporting background and the engineering to build what comes next.
-
-**[Connect on LinkedIn ↗](https://www.linkedin.com/in/marzelino/) · [Send me an email ↗](mailto:marzelino.malintoi@gmail.com)**
-
-<sub>Built around the work. Backed by the details.</sub>
-
-</div>
+Based in Manado, Indonesia. Open to data and automation opportunities.
